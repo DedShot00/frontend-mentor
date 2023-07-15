@@ -4,11 +4,11 @@ export default function Home() {
   return (
     <main className="min-h-screen  bg-white xs:flex xs:justify-center xs:items-center xs:bg-[#1a1c30] xs:p-4 ">
 
-      <article className="min-h-screen xs:min-h-0 xs:grid xs:grid-flow-col xs:grid-cols-[2fr,_3fr] bg-white xs:p-4 rounded-2xl max-w-3xl">
-        <div className=" bg-cover bg-no-repeat  aspect-[375_/_284] xs:aspect-auto bg-[url('/images/sign-up-mobile.svg')] xs:bg-[url('/images/sign-up-desktop.svg')] inline-block w-full xs:rounded-2xl " />
+      <article className="min-h-screen xs:min-h-0 xs:grid xs:grid-flow-col xs:grid-cols-[3fr,_2fr] bg-white xs:p-4 rounded-2xl max-w-3xl">
+        <div className=" xs:order-1 bg-cover bg-no-repeat  aspect-[375_/_284] xs:aspect-auto bg-[url('/images/sign-up-mobile.svg')] xs:bg-[url('/images/sign-up-desktop.svg')] inline-block w-full xs:rounded-2xl " />
         
         
-        <section className="p-6 xs:p-0 xs:pl-4 flex flex-col xs:justify-center h-full xs:my-auto ">
+        <section className="p-6 xs:p-0 xs:pr-4 flex flex-col xs:justify-center h-full xs:my-auto ">
           {/* <!-- Sign-up form start --> */}
           <h1 className="text-4xl font-bold pt-2 text-[#232742]">Stay updated!</h1>
           <p className="py-6">
@@ -30,7 +30,7 @@ export default function Home() {
           </ul>
           <form className="flex flex-col py-6 gap-3">
             <label className="text-sm font-bold" htmlFor="email">Email address </label>
-            <input className=" outline-none focus:border-2 focus:border-black border border-zinc-500 py-2 pl-2 rounded-lg" type="email" placeholder="email@company.com" />
+            <input required className=" outline-none focus:border-2 focus:border-black border border-zinc-500 py-2 pl-2 rounded-lg" type="email" placeholder="email@company.com" />
             <button className=" py-3 px-4 bg-[#232742] rounded-lg text-white font-semibold hover:bg-gradient-to-r hover:from-pink-500 hover:to-orange-500 hover:shadow-md hover:shadow-rose-300">Subscribe to monthly newsletter</button>
           </form>
           {/* <!-- Sign-up form end --> */}
